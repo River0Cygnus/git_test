@@ -15,7 +15,7 @@ jobs:
     
     - name: Sync posts to server
       run: |
-        ls $GITHUB_WORKSPACE
+        ls -a $GITHUB_WORKSPACE
     # - name: Sync posts to server via rsync
     #   uses: appleboy/ssh-action@v1.0.3
     #   with:
