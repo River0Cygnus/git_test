@@ -15,9 +15,9 @@ jobs:
 
     - name: Post to server
       env:
-        server_ssh_key: ${{ secrets.SERVER_SSH_KEY }}
+        server_ssh_key: 123
       run: |
-        echo "$secrets.SERVER_SSH_KEY" > /tmp/key
+        echo "$server_ssh_key" > /tmp/key
         chmod 600 /tmp/key
         cat /tmp/key      
         rm -f /tmp/key
